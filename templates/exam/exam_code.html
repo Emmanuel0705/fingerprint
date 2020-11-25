@@ -1,0 +1,15 @@
+{% extends "header.html" %} {% block body %}
+
+<!-- The following is the student_id submission field to check if he is enrolled or no -->
+
+<div class="row">
+    <div class="col-md-12 text-center">
+        <h2>Please enter the course code number</h2>
+        <form action="exam.get_course_students" id="form" data-bind="true">
+            <input type="text" id="form_input" name="course">
+            <input type="submit" value="Submit" id="form_submit">
+        </form>
+    </div>
+</div>
+<div id="demo"></div>
+{% endblock %}
